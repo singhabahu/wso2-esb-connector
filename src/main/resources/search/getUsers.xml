@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="getUsers" xmlns="http://ws.apache.org/ns/synapse">
+	<parameter name="query" description="The query" />
+	<sequence>
+		<property expression="$func:query" name="uri.var.query" />
+		<property name="Accept-Encoding" scope="transport" action="remove"/>
+		<property name="messageType" scope="axis2" value="application/json"/>
+		<call>
+			<endpoint>
+				<http method="get" uri-template="https://www.googleapis.com/plus/v1/people?query={uri.var.query}" />
+			</endpoint>
+		</call>
+	</sequence>
+</template>

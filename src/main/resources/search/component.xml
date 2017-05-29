@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="search" type="synapse/template">
+  <subComponents>
+    <component name="getProfile">
+      <file>getProfile.xml</file>
+      <description>GET user's profile information</description>
+    </component>
+    <component name="getUsers">
+      <file>getUsers.xml</file>
+      <description>GET user by name</description>
+    </component>
+  </subComponents>
+</component>
