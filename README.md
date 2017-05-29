@@ -15,7 +15,7 @@ In the URL's below where `file_id` and `query` are used, use the params given ab
 - Headers: Authorization,Bearer <access_token>
 
 ### Search for specific file [GET] 
-- https://www.googleapis.com/drive/v2/files?q=<query>
+- https://www.googleapis.com/drive/v2/files?q=\<query>
 - Headers: Authorization,Bearer <access_token>
 
 
