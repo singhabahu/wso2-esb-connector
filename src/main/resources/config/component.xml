@@ -3,7 +3,7 @@
   <subComponents>
     	<component name="init">
       <file>init.xml</file>
-      <description>Configuratios for Google Plus API</description>
+      <description>Configurations for Google drive API</description>
     </component>
     </subComponents>
 </component>

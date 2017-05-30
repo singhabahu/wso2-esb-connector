@@ -21,16 +21,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.carbon.esb.connector</groupId>
-    <artifactId>org.wso2.carbon.esb.connector.googleplus</artifactId>
+    <artifactId>org.wso2.carbon.esb.connector.gdrive</artifactId>
     <version>1.0.0</version>
     <packaging>bundle</packaging>
-    <name>WSO2 Carbon - Connector For GooglePlus</name>
+    <name>WSO2 Carbon - Connector For Google Drive</name>
     <url>http://wso2.org</url>
 
     <properties>
         <axis2.osgi.version.range>1.7.1</axis2.osgi.version.range>
         <axiom.osgi.version.range>1.2.5</axiom.osgi.version.range>
-        <connector.name>googleplus</connector.name>
+        <connector.name>gdrive</connector.name>
         <test.framework.version>4.2.0</test.framework.version>
         <esb.version>4.9.0</esb.version>
         <carbon.kernel.version>4.4.1</carbon.kernel.version>

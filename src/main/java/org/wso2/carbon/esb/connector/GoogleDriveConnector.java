@@ -24,13 +24,13 @@ import org.wso2.carbon.connector.core.ConnectException;
 /**
  * Sample method implementation.
  */
-public class GooglePlusConnector extends AbstractConnector {
+public class GoogleDriveConnector extends AbstractConnector {
 
     @Override
     public void connect(MessageContext messageContext) throws ConnectException {
         Object templateParam = getParameter(messageContext, "generated_param");
         try {
-            log.info("GooglePlus sample connector received message :" + templateParam);
+            log.info("GoogleDrive sample connector received message :" + templateParam);
             /**Add your connector code here 
             **/
         } catch (Exception e) {
