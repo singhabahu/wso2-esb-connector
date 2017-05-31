@@ -4,7 +4,7 @@
        startOnLoad="true"
        statistics="disable"
        trace="disable"
-       transports="http,http">
+       transports="http,https">
    <target>
       <inSequence>
          <property expression="json-eval($.fileId)" name="fileId"/>
