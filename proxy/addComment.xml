@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="gdrive_addComment" transports="https,http" statistics="disable" trace="disable" startOnLoad="true">
+	<target>
+		<inSequence>
+            <property name="fileId" expression="json-eval($.fileId)" />
+            <property name="commentText" expression="json-eval($.commentText)" />
+            <gdrive.addComment>
+                <fileId>{$ctx:fileId}</fileId>
+                <commentText>{$ctx:commentText}</commentText>
+            </gdrive.addComment>
+			<respond />
+		</inSequence>
+		<outSequence>
+			<log />
+			<send />
+		</outSequence>
+	</target>
+	<description />
+</proxy>  
