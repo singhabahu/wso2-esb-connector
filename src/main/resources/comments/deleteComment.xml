@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="deleteComment" xmlns="http://ws.apache.org/ns/synapse">
+		<parameter name="fileId" description="The file id" />
+        <parameter name="commentId" description="The comment id" />
+		<sequence>
+			<property expression="$func:fileId" name="uri.var.fileId" />
+            <property expression="$func:commentId" name="uri.var.commentId" />
+			<property name="Accept-Encoding" scope="transport" action="remove"/>
+			<property name="messageType" scope="axis2" value="application/json"/>
+			<call>
+				<endpoint>
+					<http method="delete" uri-template="https://www.googleapis.com/drive/v3/files/{uri.var.fileId}/comments/{uri.var.commentId}" />
+				</endpoint>
+			</call>
+	</sequence>
+</template>
