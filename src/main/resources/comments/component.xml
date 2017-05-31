@@ -9,5 +9,9 @@
       <file>getComments.xml</file>
       <description>Get comments for a file</description>
     </component>
+    <component name="deleteComment">
+      <file>deleteComment.xml</file>
+      <description>Delete comments on a file</description>
+    </component>
     </subComponents>
 </component>

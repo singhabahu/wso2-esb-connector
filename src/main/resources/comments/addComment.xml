@@ -5,13 +5,16 @@
 	<sequence>
 		<property expression="$func:fileId" name="uri.var.fileId" />
 		<property expression="$func:commentText" name="uri.var.commentText" />
+		<property name="messageType" scope="axis2" value="application/json"/>
 		<payloadFactory media-type="json">
 			<format>
 				{
-					"context": "$1"
+					"fileId": "$1",
+					"content": "$2"
 				}
 			</format>
 			<args>
+				<arg expression="$ctx:uri.var.fileId"/>
 				<arg expression="$ctx:uri.var.commentText"/>
 			</args>
 		</payloadFactory>
