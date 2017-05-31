@@ -1,3 +1,1 @@
-config,init,accessToken,Configuratios for Google Plus API
-search,getProfile,,GET user's profile information
-search,getUsers,query,GET user by name
+comments,getComments,query,Get comments for file id

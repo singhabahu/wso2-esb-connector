@@ -20,6 +20,7 @@
     <component name="gdrive" package="org.wso2.carbon.connector" >
         <dependency component="config" />
         <dependency component="search" />
+        <dependency component="comments" />
         <description>Google Drive connector library</description>
     </component>
     <icon>icon/icon.png</icon>

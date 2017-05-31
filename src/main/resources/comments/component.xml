@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="comments" type="synapse/template">
+  <subComponents>
+    	<component name="getComments">
+      <file>getComments.xml</file>
+      <description>Get comments for file id</description>
+    </component>
+    </subComponents>
+</component>
