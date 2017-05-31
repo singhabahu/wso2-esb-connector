@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse"
+       name="getRevisions"
+       startOnLoad="true"
+       statistics="disable"
+       trace="disable"
+       transports="http,https">
+   <target>
+      <inSequence>
+         <property expression="json-eval($.query)" name="query"/>
+         <property expression="json-eval($.accessToken)" name="accessToken"/>
+         <gdrive.init>
+            <accessToken>{$ctx:accessToken}</accessToken>
+         </gdrive.init>
+         <gdrive.getRevisions>
+            <query>{$ctx:query}</query>
+         </gdrive.getRevisions>
+         <respond/>
+      </inSequence>
+      <outSequence>
+         <log/>
+         <send/>
+      </outSequence>
+   </target>
+   <description/>
+</proxy>
+                                

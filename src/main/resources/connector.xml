@@ -21,6 +21,7 @@
         <dependency component="config" />
         <dependency component="search" />
         <dependency component="comments" />
+        <dependency component="revisions" />
         <description>Google Drive connector library</description>
     </component>
     <icon>icon/icon.png</icon>

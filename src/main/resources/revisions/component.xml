@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="revisions" type="synapse/template">
+  <subComponents>
+    	<component name="getRevisions">
+      <file>getRevisions.xml</file>
+      <description>Get revisions for a file </description>
+    </component>
+    </subComponents>
+</component>
