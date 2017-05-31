@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="addComment" xmlns="http://ws.apache.org/ns/synapse">
+	<parameter name="fileId" description="The fileId" />
+	<parameter name="commentText" description="The commentText" />
+	<sequence>
+		<property expression="$func:fileId" name="uri.var.fileId" />
+		<property expression="$func:commentText" name="uri.var.commentText" />
+		<payloadFactory media-type="json">
+			<format>
+				{
+					"context": "$1"
+				}
+			</format>
+			<args>
+				<arg expression="$ctx:uri.var.commentText"/>
+			</args>
+		</payloadFactory>
+		<call>
+			<endpoint>
+				<http method="post" uri-template="https://www.googleapis.com/drive/v2/files/{uri.var.fileId}/comments/" />
+			</endpoint>
+		</call>	
+	</sequence>
+</template>

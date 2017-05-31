@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="comments" type="synapse/template">
   <subComponents>
-    	<component name="getComments">
+    	<component name="addComment">
+      <file>addComment.xml</file>
+      <description>Add comments for a file </description>
+    </component>
+    <component name="getComments">
       <file>getComments.xml</file>
-      <description>Get comments for file id</description>
+      <description>Get comments for a file</description>
     </component>
     </subComponents>
 </component>

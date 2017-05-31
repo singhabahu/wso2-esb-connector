@@ -1,1 +1,1 @@
-comments,getComments,query,Get comments for file id
+comments,addComment,fileId:commentText,Add comments for a file 
